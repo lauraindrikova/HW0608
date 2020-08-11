@@ -1,3 +1,5 @@
+import sun.font.TrueTypeFont
+
 def print2():Unit = {
 println("One Line")
 println("Second Line")
@@ -48,6 +50,70 @@ def mutateOutside () = {
 myMutable
 myMutable = add5(myMutable)
 myMutable
+def getReversedUpper(text:String) = {
+  println(s"Going to revers: $text")
+  text.toUpperCase.reverse
+}
+
+def getSTringLength(text:String) = {
+  text.length
+}
+
+getReversedUpper(text = "Beer")
+getReversedUpper(text = "Valdis") == "SIDLAV"
+getSTringLength("Valdis")
+
+def getMax(a:Int, b:Int)= {
+  if (a>b) {
+    val myName = "Valdis"
+    a * myName.length
+  } else {
+    val myName = "Laura"
+    b * myName.length
+  }
+}
+
+getMax(10,20)
+getMax(5,3)
+
+val a = 5
+if (a == 2*2) {
+  println("A is 4")
+} else {
+  println("A is not 4")
+}
+
+def isEqualTo4(a:Int): Boolean = {
+  if (a == 2*2) {
+    true
+  } else {
+    false
+  }
+}
+
+isEqualTo4(4)
+isEqualTo4(5)
+
+5 >2*2
+4 >= 2*2
+5 != 4
+
+val myName = "Laura"
+if (myName == "Laura") {
+  println("Now thats my Name")
+}
+println("This happens all the time")
+
+def checkName (myName:String, friendName:String) = {
+  if (myName == friendName) {
+    println(s"Our name are the same my $friendName")
+  } else {
+    println("Lets be friends")
+  }
+}
+
+checkName(myName = "Laura", friendName = "Laura")
+
 
 
 
